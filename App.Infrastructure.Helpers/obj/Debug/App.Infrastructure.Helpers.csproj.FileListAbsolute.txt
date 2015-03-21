@@ -1,0 +1,5 @@
+D:\Work\Chuck Norris\App.Infrastructure.Helpers\bin\Debug\App.Infrastructure.Helpers.dll
+D:\Work\Chuck Norris\App.Infrastructure.Helpers\bin\Debug\App.Infrastructure.Helpers.pdb
+D:\Work\Chuck Norris\App.Infrastructure.Helpers\obj\Debug\App.Infrastructure.Helpers.csprojResolveAssemblyReference.cache
+D:\Work\Chuck Norris\App.Infrastructure.Helpers\obj\Debug\App.Infrastructure.Helpers.dll
+D:\Work\Chuck Norris\App.Infrastructure.Helpers\obj\Debug\App.Infrastructure.Helpers.pdb

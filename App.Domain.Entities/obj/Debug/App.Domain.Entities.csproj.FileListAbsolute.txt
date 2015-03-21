@@ -1,0 +1,5 @@
+D:\Work\Chuck Norris\App.Domain.Entities\bin\Debug\App.Domain.Entities.dll
+D:\Work\Chuck Norris\App.Domain.Entities\bin\Debug\App.Domain.Entities.pdb
+D:\Work\Chuck Norris\App.Domain.Entities\obj\Debug\App.Domain.Entities.csprojResolveAssemblyReference.cache
+D:\Work\Chuck Norris\App.Domain.Entities\obj\Debug\App.Domain.Entities.dll
+D:\Work\Chuck Norris\App.Domain.Entities\obj\Debug\App.Domain.Entities.pdb

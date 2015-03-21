@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>@ViewBag.Title</title>
+
+    <link href="~/assets/css/bootstrap.min.css?v=2" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/app.css?v=3" />
+    <script src="~/assets/js/jquery-1.11.2.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+    @RenderSection("css", false)
+</head>
+<body>
+    <div id="main" class="container">
+
+        <div class="masthead">
+            <h2>Spidya</h2>
+        </div>
+
+        <div id="nav-tabs" class="row">
+            <ul class="nav nav-tabs">
+                    <li role="presentation" id="systemStatus"><a href="/">Nav Menu1</a></li>
+                    <li role="presentation" id="management"><a href="/">Nav Menu2</a></li>
+                    <li role="presentation" id="statistics"><a href="/">Nav Menu3</a></li>
+                    <li role="presentation" id="test"><a href="/">Nav Menu4</a></li>
+            </ul>
+
+        </div>
+
+        <div class="row">
+            @RenderBody()
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p>&copy; NedSet</p>
+        </div>
+
+    </div> <!-- /container -->
+    @RenderSection("script", false)
+     
+</body>
+</html>
