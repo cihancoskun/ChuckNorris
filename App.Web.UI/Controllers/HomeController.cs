@@ -15,7 +15,7 @@ namespace App.Web.UI.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            ViewBag.Title = "UI home index";
+            ViewBag.Title = "Nedset";
             return View();
         }
     }
