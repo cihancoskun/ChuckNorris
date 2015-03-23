@@ -18,5 +18,12 @@ namespace App.Web.UI.Controllers
             ViewBag.Title = "Nedset";
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Product()
+        {
+            ViewBag.Title = "Nedset - Ürün Hakkında";
+            return View();
+        }
     }
 }

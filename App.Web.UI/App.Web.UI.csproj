@@ -159,6 +159,7 @@
     <Content Include="Assets\fonts\mfglabsiconset-webfont.eot" />
     <Content Include="Assets\fonts\mfglabsiconset-webfont.ttf" />
     <Content Include="Assets\fonts\mfglabsiconset-webfont.woff" />
+    <Content Include="Views\Home\Product.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

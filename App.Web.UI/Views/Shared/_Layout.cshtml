@@ -41,5 +41,44 @@
     </div> <!-- /container -->
     @RenderSection("script", false)
 
+
+    <script type="text/javascript" src="~/Assets/_plugin/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: false,
+                pagination: false,
+                singleItem: true
+            });
+            $("#owl-demo2").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: false,
+                pagination: true,
+                singleItem: true
+            });
+        });
+        var checkScroll = false;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50 && !checkScroll) {
+                $("#logo_img").attr("src", "/Assets/img/logo_l.png");
+                $("#logo_img").css("width", "80%");
+                $(".l-2").css("height", "55px");
+                $("li.logo a").css({ "height": "55px", "line-height": "1em" });
+                $("li.logo a img").css("margin-top", "-7px");
+                checkScroll = true;
+            }
+            else if ($(window).scrollTop() < 50 && checkScroll) {
+                $("#logo_img").attr("src", "/Assets/img/logo.png");
+                $(".l-2").css("height", "intial");
+                $("li.logo a").css({ "height": "", "line-height": "intial" });
+                $("li.logo a img").css({ "margin-top": "0px", "width": "60%" });
+                checkScroll = false;
+            }
+        });
+
+    </script> 
 </body>
 </html>
