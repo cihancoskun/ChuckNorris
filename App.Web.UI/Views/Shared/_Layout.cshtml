@@ -6,40 +6,79 @@
 
     <title>@ViewBag.Title</title>
 
-    <link href="~/assets/css/bootstrap.min.css?v=2" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/app.css?v=3" />
+    <link rel="stylesheet" href="~/Assets/css/components.css">
+    <link rel="stylesheet" href="~/Assets/css/responsee.css">
+    <link rel="stylesheet" href="~/Assets/_plugin/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/Assets/_plugin/owl-carousel/owl.theme.css">  
+
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="~/Assets/css/template-style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.7.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="~/Assets/js/responsee.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
 
     @RenderSection("css", false)
 </head>
 <body>
     <div id="main" class="container">
-
-        <div class="masthead">
-            <h2>Spidya</h2>
-        </div>
-
-        <div id="nav-tabs" class="row">
-            <ul class="nav nav-tabs">
-                <li role="presentation" id="navMenu1"><a href="/">Nav Menu1</a></li>
-                <li role="presentation" id="navMenu2"><a href="/">Nav Menu2</a></li>
-                <li role="presentation" id="navMenu3"><a href="/">Nav Menu3</a></li>
-                <li role="presentation" id="navMenu4"><a href="/">Nav Menu4</a></li>
-            </ul>
-
-        </div>
-
-        <div class="row">
+        
+        @Html.Partial("Menu")
+        
+        <section style="overflow: hidden;">
             @RenderBody()
-        </div>
+        </section>
 
         <hr>
 
         <div class="footer">
-            <p>&copy; NedSet</p>
         </div>
 
     </div> <!-- /container -->
     @RenderSection("script", false)
 
+
+    <script type="text/javascript" src="~/Assets/_plugin/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: false,
+                pagination: false,
+                singleItem: true
+            });
+            $("#owl-demo2").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: false,
+                pagination: true,
+                singleItem: true
+            });
+        });
+        var checkScroll = false;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50 && !checkScroll) {
+                $("#logo_img").attr("src", "/Assets/img/logo_l.png");
+                $("#logo_img").css("width", "80%");
+                $(".l-2").css("height", "55px");
+                $("li.logo a").css({ "height": "55px", "line-height": "1em" });
+                $("li.logo a img").css("margin-top", "-7px");
+                checkScroll = true;
+            }
+            else if ($(window).scrollTop() < 50 && checkScroll) {
+                $("#logo_img").attr("src", "/Assets/img/logo.png");
+                $(".l-2").css("height", "intial");
+                $("li.logo a").css({ "height": "", "line-height": "intial" });
+                $("li.logo a img").css({ "margin-top": "0px", "width": "60%" });
+                checkScroll = false;
+            }
+        });
+
+    </script> 
 </body>
 </html>

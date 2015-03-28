@@ -11,3 +11,16 @@ D:\Work\Chuck Norris\App.Infrastructure.Logging\bin\Debug\NLog.xml
 D:\Work\Chuck Norris\App.Infrastructure.Logging\obj\Debug\App.Infrastructure.Logging.csprojResolveAssemblyReference.cache
 D:\Work\Chuck Norris\App.Infrastructure.Logging\obj\Debug\App.Infrastructure.Logging.dll
 D:\Work\Chuck Norris\App.Infrastructure.Logging\obj\Debug\App.Infrastructure.Logging.pdb
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Infrastructure.Logging.dll
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Infrastructure.Logging.pdb
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Domain.Entities.dll
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Domain.RepositoryInterfaces.dll
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Infrastructure.Helpers.dll
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\NLog.dll
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Domain.Entities.pdb
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Domain.RepositoryInterfaces.pdb
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\App.Infrastructure.Helpers.pdb
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\bin\Debug\NLog.xml
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\obj\Debug\App.Infrastructure.Logging.csprojResolveAssemblyReference.cache
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\obj\Debug\App.Infrastructure.Logging.dll
+D:\GitHub\ChuckNorris\App.Infrastructure.Logging\obj\Debug\App.Infrastructure.Logging.pdb
