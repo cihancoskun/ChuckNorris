@@ -135,6 +135,23 @@
     <Content Include="Assets\img\third.jpg" />
     <Content Include="Assets\js\modernizr.js" />
     <Content Include="Assets\js\responsee.js" />
+    <Content Include="Assets\_plugin\accordion\accordion.css" />
+    <Content Include="Assets\_plugin\accordion\accordion.js" />
+    <Content Include="Assets\_plugin\countdown\body-pattern.jpg" />
+    <Content Include="Assets\_plugin\countdown\ie.css" />
+    <Content Include="Assets\_plugin\countdown\jquery.countdown.js" />
+    <Content Include="Assets\_plugin\countdown\main-content-pattern.jpg" />
+    <Content Include="Assets\_plugin\countdown\modernizr.custom.js" />
+    <Content Include="Assets\_plugin\countdown\reset.css" />
+    <Content Include="Assets\_plugin\countdown\script.js" />
+    <Content Include="Assets\_plugin\countdown\social-media-arrow.png" />
+    <Content Include="Assets\_plugin\countdown\style.css" />
+    <Content Include="Assets\_plugin\countdown\stylesheet.css" />
+    <Content Include="Assets\_plugin\lightbox\html5lightbox.js" />
+    <Content Include="Assets\_plugin\lightbox\lightbox-close.png" />
+    <Content Include="Assets\_plugin\lightbox\lightbox-loading.gif" />
+    <Content Include="Assets\_plugin\lightbox\lightbox-next.png" />
+    <Content Include="Assets\_plugin\lightbox\lightbox-prev.png" />
     <Content Include="Assets\_plugin\owl-carousel\AjaxLoader.gif" />
     <Content Include="Assets\_plugin\owl-carousel\grabbing.png" />
     <Content Include="Assets\_plugin\owl-carousel\owl.carousel.css" />
@@ -160,6 +177,12 @@
     <Content Include="Assets\fonts\mfglabsiconset-webfont.ttf" />
     <Content Include="Assets\fonts\mfglabsiconset-webfont.woff" />
     <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Home\Retail.cshtml" />
+    <Content Include="Assets\_plugin\accordion\accordion.scss" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Home\Benefits.cshtml" />
+    <Content Include="Views\Home\Loging.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

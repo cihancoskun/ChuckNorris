@@ -25,5 +25,33 @@ namespace App.Web.UI.Controllers
             ViewBag.Title = "Nedset - Ürün Hakkında";
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Retail()
+        {
+            ViewBag.Title = "Nedset - Perakendecilik";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Contact()
+        {
+            ViewBag.Title = "Nedset - İletişim";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Benefits()
+        {
+            ViewBag.Title = "Nedset - Faydaları";
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Loging()
+        {
+            ViewBag.Title = "Nedset - Kullanıcı Girişi";
+            return View();
+        }
     }
 }

@@ -165,14 +165,15 @@ a.button {
 #content {
 	background: none repeat scroll 0 0 #fff;
 	padding: 5em 0;
-	text-align: center;
+	text-align: left;
 	border-bottom: 1px solid #f0f0f0;
 }
 #content h2 {
 	font-size: 1.5em;
 	font-weight: 400;
-	margin: 1em 0 0.3em;
+	margin: 1em;
 	text-transform: none;
+    text-align: center;
 }
 .content-block {
     background: none repeat scroll 0 0 rgb(0, 30, 34);

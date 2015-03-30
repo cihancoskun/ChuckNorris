@@ -1,0 +1,112 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section>
+    <div id="head">
+        <div class="line">
+            <h1>Some long page title</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div class="line">
+            <p class="s-12 l-8 center">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil.
+            </p>
+            <h2>Some subtitle</h2>
+            <p class="s-12 l-8 center">
+                Imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+            </p>
+
+
+            <div class="accordion">
+                <dl>
+                    <dt>
+                        <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordionTitle js-accordionTrigger">First Accordion heading</a>
+                    </dt>
+                    <dd class="accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+                    </dd>
+                    <dt>
+                        <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordionTitle js-accordionTrigger">
+                            Second Accordion heading
+                        </a>
+                    </dt>
+                    <dd class="accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+                    </dd>
+                    <dt>
+                        <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordionTitle js-accordionTrigger">
+                            Third Accordion heading
+                        </a>
+                    </dt>
+                    <dd class="accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                        <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        var d = document,
+        accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+        setAria,
+        setAccordionAria,
+        switchAccordion,
+      touchSupported = ('ontouchstart' in window),
+      pointerSupported = ('pointerdown' in window);
+
+        skipClickDelay = function (e) {
+            e.preventDefault();
+            e.target.click();
+        }
+
+        setAriaAttr = function (el, ariaType, newProperty) {
+            el.setAttribute(ariaType, newProperty);
+        };
+        setAccordionAria = function (el1, el2, expanded) {
+            switch (expanded) {
+                case "true":
+                    setAriaAttr(el1, 'aria-expanded', 'true');
+                    setAriaAttr(el2, 'aria-hidden', 'false');
+                    break;
+                case "false":
+                    setAriaAttr(el1, 'aria-expanded', 'false');
+                    setAriaAttr(el2, 'aria-hidden', 'true');
+                    break;
+                default:
+                    break;
+            }
+        };
+        //function
+        switchAccordion = function (e) {
+            e.preventDefault();
+            var thisAnswer = e.target.parentNode.nextElementSibling;
+            var thisQuestion = e.target;
+            if (thisAnswer.classList.contains('is-collapsed')) {
+                setAccordionAria(thisQuestion, thisAnswer, 'true');
+            } else {
+                setAccordionAria(thisQuestion, thisAnswer, 'false');
+            }
+            thisQuestion.classList.toggle('is-collapsed');
+            thisQuestion.classList.toggle('is-expanded');
+            thisAnswer.classList.toggle('is-collapsed');
+            thisAnswer.classList.toggle('is-expanded');
+
+            thisAnswer.classList.toggle('animateIn');
+        };
+        for (var i = 0, len = accordionToggles.length; i < len; i++) {
+            if (touchSupported) {
+                accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+            }
+            if (pointerSupported) {
+                accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+            }
+            accordionToggles[i].addEventListener('click', switchAccordion, false);
+        }
+    });
+</script>
