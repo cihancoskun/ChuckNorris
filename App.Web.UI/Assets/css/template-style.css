@@ -223,6 +223,38 @@ form.customform input, form.customform select, form.customform textarea {
 #map-block iframe {
     display: block;
 }
+
+.logo-link::after, .logo-link::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 85px;
+  left: 0px;
+  width: 50%;
+  height: 30%;
+  max-width: 300px;
+  -webkit-box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+  box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.logo-link::after{
+    right: 0px;
+  left: auto;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.minilogo-link::after,.minilogo-link::before{
+    top:25px;
+}
+
 @media screen and (max-width: 800px) {
 body {
 	background: none repeat scroll 0 0 rgb(0, 30, 34);
@@ -245,5 +277,15 @@ ul.top-ul {
 }
 ul.top-ul .right {
 	float: none;
+}
+
+}
+@media screen and (max-width: 1200px) {
+    .logo-link::after, .logo-link::before{
+        top: 70px;
+    }
+
+    .minilogo-link::after,.minilogo-link::before{
+    top:25px;
 }
 }

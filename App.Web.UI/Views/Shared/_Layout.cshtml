@@ -60,11 +60,12 @@
         var checkScroll = false;
         $(window).scroll(function () {
             if ($(window).scrollTop() > 50 && !checkScroll) {
-                $("#logo_img").attr("src", "/Assets/img/logo_l.png");
+                $("#logo_img").attr("src", "/Assets/img/logo_mini.png");
                 $("#logo_img").css("width", "80%");
                 $(".l-2").css("height", "55px");
                 $("li.logo a").css({ "height": "55px", "line-height": "1em" });
                 $("li.logo a img").css("margin-top", "-12px");
+                $(".logo-link").addClass("minilogo-link");
                 checkScroll = true;
             }
             else if ($(window).scrollTop() < 50 && checkScroll) {
@@ -72,6 +73,7 @@
                 $(".l-2").css("height", "intial");
                 $("li.logo a").css({ "height": "", "line-height": "intial" });
                 $("li.logo a img").css({ "margin-top": "0px", "width": "60%" });
+                $(".logo-link").removeClass("minilogo-link");
                 checkScroll = false;
             }
         });
